@@ -1,5 +1,13 @@
-#midnight-blue {
+#rocketpop-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#summer-shades {
     text-align: center;
+    font-family: cursive;
 }
 #midnight-blue-1 {
     background-color:#011627;
@@ -7,18 +15,14 @@
     text-align:center;
     padding: 24px;
 }
-#rocketpop-red {
-    text-align: center;
-}
+
 #rocketpop-red-1 {
     background-color:#FF0022;
     color: white;
     text-align:center;
     padding: 24px;
 }
-#summer-sky-blue {
-    text-align: center;
-}
+
 #summer-sky-blue-1 {
     background-color:#41EAD4;
     color: white;
@@ -26,12 +30,89 @@
     padding: 24px;
 }
 
-#sunshine-yellow {
-    text-align: center;
-}
 #sunshine-yellow-1 {
     background-color:#F4D35E;
     color: white;
     text-align:center;
     padding: 24px;
+}
+
+#ocean-seaside {
+    text-align: center;
+    font-family: cursive;
+}
+
+#deep-blue {
+    background-color:#222E50;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sea-blue {
+    background-color:#007991;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sea-green {
+    background-color:#439A86;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sea-foam {
+    background-color:#BCD8C1;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#ocean-seaside-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#sunflower-field {
+    text-align: center;
+    font-family: cursive;
+}
+
+#cloudy-sky {
+    background-color:#A8D5E2;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sunflower-orange {
+    background-color:#F9A620;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sunflower-yellow {
+    background-color:#FFD449;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#stem-green {
+    background-color:#548C2F;
+    color: white;
+    text-align:center;
+    padding: 24px;
+}
+
+#sunflower-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
