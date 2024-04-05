@@ -1,0 +1,14 @@
+div {
+    border: 2px dashed lightcoral;
+    margin: 24px 0px 48px 0px;
+    padding: 12px 24px;
+    background-color: lightpink;
+    border-radius: 20px;
+}
+p {
+    /*border: 20px dotted blue; */
+    margin: 60px;
+    padding: 12px 24px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 34px;
+}
