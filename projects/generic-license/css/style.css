@@ -1,0 +1,149 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Delius+Unicase:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mrs+Saint+Delafield&display=swap');
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    margin: 0px;
+}
+
+#license {
+    border: 3px solid steelblue;
+    border-radius: 20px;
+    width: 700px;
+    margin: 20px;
+    padding: 7px 20px;
+    background-color: lightsteelblue;
+    
+}
+
+#left-side {
+    /*border: 20px; */
+    display: inline-block;
+    width: 66%;
+}
+
+h4 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 7px 20px;
+    font-size: 22px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0px;
+}
+
+#id-and-expiration div {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px
+}
+
+#id-and-expiration div span {
+   color: red;
+   font-weight: bold;
+   text-align: center;
+}
+
+#address {
+    font-weight: bolder;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 21px;
+    margin: 0px;
+}
+
+#small-pic {
+     /*border: 20px; */
+    display: inline-block;
+    width: 20%;
+}
+
+#small-pic img {
+    width: 80px;
+    opacity: 50%;
+}
+
+#small-pic {
+    display: inline-block;
+    width: 29%;
+    text-align: center;
+}
+
+#data-fields {
+     /*border: 20px; */
+    display: inline-block;
+    width: 69%;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style:normal;
+}
+
+#data-right {
+    display: inline-block;
+    width: 40%;
+    
+}
+
+#data-right span {
+    color: red;
+    font-weight: bold;
+}
+
+#data-left span {
+    color: red;
+    font-weight: 800; 
+}
+
+#data-left {
+    display: inline-block;
+    width: 50%;
+}
+
+#signature {
+    text-align: center;
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+#right-side {
+     /*border: 20px; */
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#right-side img {
+    width: 240px;
+    padding: 10px
+}
+
+#donor {
+     /*border: 20px; */
+    color: red;
+    display: inline-block;
+}
+
+#real-id {
+     /*border: 20px; */
+    color: white;
+    background-color: yellow;
+    border-radius: 40px;
+    display: inline-block;
+}
