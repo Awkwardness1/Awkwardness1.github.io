@@ -14,14 +14,14 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 45px;
+    font-size: 60px;
     margin: 0px;
 }
 
 #license {
     border: 3px solid steelblue;
     border-radius: 20px;
-    width: 700px;
+    width: 750px;
     margin: 20px;
     padding: 7px 20px;
     background-color: lightsteelblue;
@@ -48,7 +48,7 @@ h4 {
 
 #id-and-expiration div {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 55px;
     font-size: 20px
 }
 
@@ -63,18 +63,18 @@ h4 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style:normal;
-    font-size: 21px;
+    font-size: 19px;
     margin: 0px;
 }
 
 #small-pic {
      /*border: 20px; */
     display: inline-block;
-    width: 20%;
+    width: 40%;
 }
 
 #small-pic img {
-    width: 80px;
+    width: 85px;
     opacity: 50%;
 }
 
@@ -119,7 +119,7 @@ h4 {
     font-family: "Mrs Saint Delafield", cursive;
     font-weight: bold;
     font-style: normal;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 #right-side {
