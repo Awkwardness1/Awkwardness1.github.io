@@ -57,10 +57,10 @@ h4.learn {
 .purse {
     border: dotted rgb(154, 197, 157) 10px;
     width: 90%;
+    padding: 70px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .purse img {
@@ -78,10 +78,10 @@ h4.learn {
 .sweet-tea {
     border: dotted rgb(246, 217, 99) 10px;
     width: 90%;
+    padding: 70px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .sweet-tea img {
@@ -99,10 +99,10 @@ h4.learn {
 .headphones {
     border: dotted rgb(215, 121, 53) 10px;
     width: 90%;
+    padding: 70px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .headphones img {
