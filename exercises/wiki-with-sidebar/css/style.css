@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@font-face {
+    font-family: sans;
+    src: url(../fonts/determination-mono-web-font/DeterminationMonoWebRegular-Z5oq.ttf);
+}
+
+h1 {
+    font-family: sans;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: sans;
+}
+
+h3 {
+    font-family: sans;
+    font-size: 20px;
+}
+
+h4 a {
+    text-decoration: none;
+    color:rgb(147, 147, 147);
+}
+
+.grey a {
+    text-decoration: none;
+    color:rgb(147, 147, 147);
+}
+
+.white a {
+    text-decoration: none;
+    color:rgb(229, 229, 229);
+}
+
+#two-columns {
+    display: flex;
+}
+
+#sidebar-content {
+    background-color: #353535;
+    color: rgb(229, 229, 229);
+    width: 250px;
+    padding: 24px;
+}
+
+#sidebar-content ul {
+    padding-bottom: 20px;
+    font-size: 13px;
+    list-style:none;
+}
+
+.grey{
+    color:rgb(147, 147, 147);
+    font-weight:900;
+}
+
+.white {
+    color: rgb(229, 229, 229);
+    font-weight: lighter;
+}
+
+#main-content {
+    /* background-color: lightblue; */
+    flex: 1;
+    /* order: 1; */
+    padding: 48px;
+}
