@@ -9,8 +9,9 @@ body {
 
 #grid-layout {
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 450px 250px 1fr;
     grid-template-areas: "content sidebar";
+    margin: 0px 36px;
 }
 
 #sidebar-content {
@@ -52,7 +53,8 @@ body {
 }
 
 #main-content {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     grid-area: content;
-    padding: 24px;
+    margin: 0px 23px;
+    border: solid 3px navy;
 }
