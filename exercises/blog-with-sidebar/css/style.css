@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: url(../images/background.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: mario;
+    src: url(../fonts/pixemon-trial-font/PixemonTrialRegular-p7nLK.ttf);
+    font-weight: light;
+}
+
+h1 {
+    font-family: "mario";
+    color: navy;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: "mario";
+    color: rgb(245, 236, 225);
+    margin: 0px;
+}
+
+h3 {
+    font-family: "mario";
+    color: navy;
+}
+
+span {
+    font-family: "mario";
+    color: navy;
+    font-size: 30px;
+    padding: 0px;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 800px 250px 1fr;
+    grid-template-areas: ". content sidebar .";
+    margin-top: 50px;
+}
+
+#sidebar-content {
+    /* background-color: lightblue; */
+    grid-area: sidebar;
+    margin: 20px;
+}
+
+#sidebar-content h2 {
+    background-color:darkred;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#sidebar-content ul {
+    background-color: rgb(245, 236, 225);
+    border: 5px solid darkred;
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px 12px;
+    margin-bottom: 24px;
+}
+
+#sidebar-content a {
+    text-decoration: none;
+    color:darkred;
+}
+
+#sidebar-content li {
+    padding: 8px 0px;
+    border-bottom: 1px solid navy;
+}
+
+/* How to get rid of a specific item within a list */
+#sidebar-content li:last-child {
+    border-bottom: none;
+}
+
+#main-content {
+    /* background-color: lightblue; */
+    grid-area: content;
+    border: solid 7px navy;
+    background-color:rgb(245, 236, 225);
+    padding: 36px;
+}
+
+#wiki {
+    font-size: 15px;
+    color: darkred;
+}
+
+#date {
+    font-size: 13px;
+    color: navy;
+}
+
+img.mario {
+    float: right;
+    border-radius: 20px;
+    padding: 5px;
+    width: 175px;
+}
