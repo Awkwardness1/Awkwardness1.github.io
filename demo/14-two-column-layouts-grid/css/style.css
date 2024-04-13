@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-areas: "content sidebar";
+}
+
+#sidebar-content {
+    /* background-color: lightblue; */
+    grid-area: sidebar;
+    margin: 20px;
+}
+
+#sidebar-content h2 {
+    background-color: navy;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#sidebar-content ul {
+    background-color: #EFEFEF;
+    border: 1px solid navy;
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px 12px;
+    margin-bottom: 24px;
+}
+
+#sidebar-content a {
+    text-decoration: none;
+    color: navy;
+}
+
+#sidebar-content li {
+    padding: 8px 0px;
+    border-bottom: 1px solid navy;
+}
+
+/* How to get rid of a specific item within a list */
+#sidebar-content li:last-child {
+    border-bottom: none;
+}
+
+#main-content {
+    background-color: lightblue;
+    grid-area: content;
+    padding: 24px;
+}
