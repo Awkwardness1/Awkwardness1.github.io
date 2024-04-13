@@ -46,6 +46,7 @@ span {
     grid-template-columns: 1fr 800px 250px 1fr;
     grid-template-areas: ". content sidebar .";
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #sidebar-content {
@@ -105,8 +106,23 @@ span {
 }
 
 img.mario {
+    float: left;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+img.chain {
     float: right;
     border-radius: 20px;
     padding: 5px;
     width: 175px;
+}
+
+img.sleep {
+    float:right;
+    width: 175px;
+    margin: 0px;
+    padding: 0px;
 }
