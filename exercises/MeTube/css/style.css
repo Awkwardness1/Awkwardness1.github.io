@@ -103,37 +103,37 @@ body {
 }
 
 img#adulting {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
 
 img#balance {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
 
 img#my-life {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
 
 img#self-care {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
 
 img#self-love {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
 
 img#travel {
-    width: 300px;
+    width: 100%;
     border: 5px solid #800020;
     border-radius: 25px;
 }
