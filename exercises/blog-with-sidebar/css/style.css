@@ -56,7 +56,7 @@ span {
 }
 
 #sidebar-content h2 {
-    background-color:darkred;
+    background-color: darkred;
     color: white;
     padding: 12px;
     font-size: 18px;
@@ -74,7 +74,7 @@ span {
 
 #sidebar-content a {
     text-decoration: none;
-    color:darkred;
+    color: darkred;
 }
 
 #sidebar-content li {
@@ -91,7 +91,7 @@ span {
     /* background-color: lightblue; */
     grid-area: content;
     border: solid 7px navy;
-    background-color:rgb(245, 236, 225);
+    background-color: rgb(245, 236, 225);
     padding: 36px;
 }
 
@@ -121,7 +121,7 @@ img.chain {
 }
 
 img.sleep {
-    float:right;
+    float: right;
     width: 175px;
     margin: 0px;
     padding: 0px;
