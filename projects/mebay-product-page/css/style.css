@@ -20,38 +20,38 @@ body {
 }
 
 #header #m {
-    color: #e62525;
+    color: #283D3B;
 }
 
 #header #e {
-    color: #f3b006;
+    color: #197278;
 }
 
 #header #b {
-    color: #0fcf25;
+    color: rgb(220, 127, 127);
 }
 
 #header #a {
-    color: #0679f3;
+    color: #C44536;
 }
 
 #header #y {
-    color: #c30bc6;
+    color: #772E25;
 }
 
 #grid-layout {
     display: grid;
     grid-template-columns: 1.5fr 2fr .5fr;
     grid-template-areas:
-        "sideimgage main info";
-    margin: 0px 36px;
+        "sideimage main info";
+    margin: 0px 50px 50px;
     padding: 10px;
     border: 4px dotted rgb(220, 127, 127);
     border-radius: 12px;
 }
 
 #sideimage{
-    grid: sideimage;
+    grid-area: sideimage;
 }
 
 #sideimage #sideimage-content > img {
@@ -68,7 +68,7 @@ body {
 }
 
 #main {
-    grid: main;
+    grid-area: main;
     /* background-color: blue; */
 }
 
@@ -83,7 +83,7 @@ body {
 
 #inner-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1 fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "opt1 opt2 opt3";
 }
@@ -92,27 +92,30 @@ body {
     grid-area: opt1;
     border: 3px solid rgb(220, 127, 127);
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     margin-top: 0px;
     border-radius: 12px;
+    padding: 5px;
 }
 
 #opt-2 {
     grid-area: opt2;
     border: 3px solid rgb(220, 127, 127);
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     margin-top: 0px;
     border-radius: 12px;
+    padding: 5px;
 }
 
 #opt-3 {
     grid-area: opt3;
     border: 3px solid rgb(220, 127, 127);
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     margin-top: 0px;
     border-radius: 12px;
+    padding: 5px;
 }
 
 #inner-grid div a:hover {
@@ -133,7 +136,7 @@ body {
 
 #buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1 fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "buy cart wish";
 }
@@ -141,9 +144,7 @@ body {
 #buy {
     grid-area: buy;
     text-align: center;
-    margin: 10px;
-    margin-top: 0px;
-    background-color:rgb(220, 127, 127);
+    background-color: rgb(220, 127, 127);
     border-radius: 12px;
     padding: 5px;
     margin: 20px;
@@ -152,8 +153,7 @@ body {
 #cart {
     grid-area: cart;
     text-align: center;
-    margin-top: 0px;
-    background-color:rgb(220, 127, 127);
+    background-color: rgb(220, 127, 127);
     border-radius: 12px;
     padding: 5px;
     margin: 20px;
@@ -162,8 +162,7 @@ body {
 #wish {
     grid-area: wish;
     text-align: center;
-    margin-top: 0px;
-    background-color:rgb(220, 127, 127);
+    background-color: rgb(220, 127, 127);
     border-radius: 12px;
     padding: 5px;
     margin: 20px;
@@ -175,9 +174,9 @@ body {
 }
 
 #info {
-    grid: info;
+    grid-area: info;
     text-align: left;
-    background-color:rgba(220, 127, 127, 0.155);
+    background-color: rgba(220, 127, 127, 0.155);
     padding: 20px;
     border-radius: 12px;
 }
@@ -200,10 +199,33 @@ body {
     padding: 2px;
 }
 
+#positive {
+    border-bottom: 1px solid rgb(220, 127, 127);
+}
+
 #sidebar ul:hover{
-    color:rgb(220, 127, 127);
+    color: rgb(220, 127, 127);
 }
 
 #sidebar .link a:hover{
-    color:rgb(220, 127, 127);
+    color: rgb(220, 127, 127);
+}
+
+#para-content {
+    color: #111111;
+    text-align: center;
+    background-color: rgba(220, 127, 127, 0.155);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#head-para {
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+#small-para {
+    font-weight: bolder;
+    font-size: 10px;
 }
