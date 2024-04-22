@@ -64,6 +64,9 @@ body {
 
 .animagram-footer {
     text-align: center;
-    font-size: 25px;
-    
+    font-size: 23px;
+    display: inline-grid;
+    display: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
