@@ -47,18 +47,19 @@ body {
 .pokemon-header {
     display: flex;
     margin: 0px;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pokemon-header h2 {
-    background: red;
+    /* background: red; */
     font-size: 30px;
     margin: 0px;
 }
 
 .pokemon-header div {
-    background: blue;
-    font-size: 18px;
+    /* background: blue; */
+    font-size: 20px;
     align-items: center;
     margin-left:0px
 }
@@ -83,10 +84,10 @@ body {
 
 .attack {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
-    border-bottom: 2px solid rgb(121, 105, 1);
+    border-bottom: 3px solid rgb(121, 105, 1);
 }
 
 .bold {
@@ -95,19 +96,19 @@ body {
 }
 
 .description {
-    margin: 10px;
+    margin: 5px;
     font-size: 15px;
 }
 
 .power {
     font-size: 24px;
     font-weight: bolder;
+    margin: 0px;
 }
 
 .data {
     font-size: 12px;
     font-weight: bolder;
-    padding: 5px;
     margin-top: 10px;
     border: 2px solid rgb(190, 165, 0);
 }
