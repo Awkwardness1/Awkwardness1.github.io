@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#hero-1 {
+    background-image: url("../images/tired.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero-1 h1 {
+    font-size: 10vw;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    color:#333333;
+}
+
+#hero-1 h4 {
+    font-size: 4vw;
+    margin: 0px 5vw 0px 0px;
+    color:#333333;
+}
+
+#hero-1 a {
+    font-size: 2vw;
+    display: inline-block;
+    background-color: #333333;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    margin: 5vh 5vw 0px 0px;
+    border-radius: 40px;
+}
+
+#hero-1 a:hover {
+    background-color: rgb(167, 157, 109);
+    color: #333333;
+    text-decoration: none;
+}
+
+#hero-2 {
+    background-image: url("../images/water.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-2 .hero-content{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#hero-2 h1 {
+    font-size: 10vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    color:#333333;
+}
+
+#hero-2 h4 {
+    font-size: 4vw;
+    margin: 0px 5vw 0px 0px;
+    color: whitesmoke;
+    background-color: rgba(223, 212, 158, 0.482);
+}
+
+#hero-2 a {
+    font-size: 3vw;
+    display: inline-block;
+    background-color: rgba(223, 212, 158);
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5vh 5vw 0px 0px;
+}
+
+#hero-2 a:hover {
+    background-color: rgb(167, 157, 109);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#hero-3 {
+    background-image: url("../images/theater.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero-3 h1 {
+    font-size: 6vw;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    color:whitesmoke;
+}
+
+#hero-3 h4 {
+    font-size: 3vw;
+    margin: 0px 5vw 0px 5vw;
+    color:whitesmoke;
+}
+
+#hero-3 a {
+    font-size: 2vw;
+    display: inline-block;
+    background-color: darkred;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    margin: 2vw 5vw 0px 5vw;
+}
+
+#hero-3 a:hover {
+    background-color: whitesmoke;
+    color: darkred;
+    text-decoration: none;
+    font-weight: bolder;
+}
