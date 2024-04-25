@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: hippie;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+  @font-face {
+    font-family: radical;
+    src: url(../fonts/crackman/Crackman.otf);
+}
+
+body {
+    margin: 0px;
+    background-color: bisque;
+    background-image: url("../images/70s_BG.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#hero-70s {
+    background-image: url("../images/70s_hero.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dashed 10px rgb(251, 109, 58);
+    border-top: dashed 10px rgb(251, 109, 58);
+}
+
+#hero-70s .hero-content-70s {
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+#hero-70s h3 {
+    font-family: hippie;
+    font-size: 8vw;
+    margin: 0px;
+    color: rgb(251, 109, 58);
+    text-shadow: rgb(161, 57, 18) 4px 4px; 
+}
+
+#hero-70s h4 {
+    font-family: hippie;
+    font-size: 3vw;
+    margin: 0px;
+    margin-bottom: 5vh;
+    color: rgb(82, 150, 175);
+    text-shadow: rgb(27, 64, 77) 4px 4px; 
+}
+
+#layout-70s {
+    max-width: 80vw;
+    margin: 48px auto;
+    text-align: center;
+    border: dashed 10px rgb(251, 109, 58);
+    padding: 24px;
+}
+
+.vertical-masonry-gallery {
+    columns: 3 auto;
+    column-gap: 24px;;
+}
+
+.vertical-masonry-gallery img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#hero-80s .hero-content-70s {
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+#hero-80s {
+    background-image: url("../images/80s_hero.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 10px rgb(20, 67, 209);
+    border-top: solid 10px rgb(20, 67, 209);
+}
+
+#hero-80s h3 {
+    font-family: radical;
+    font-size: 8vw;
+    margin: 0px;
+    color: rgb(103, 239, 105);
+}
+
+#hero-80s h4 {
+    font-family: radical;
+    font-size: 3vw;
+    margin: 0px;
+    margin-bottom: 5vh;
+    color: rgb(20, 254, 242);
+    text-shadow: rgb(255, 12, 243) 4px 4px; 
+}
+
+#layout-80s {
+    max-width: 80vw;
+    margin: 48px auto;
+    text-align: center;
+    border: solid 10px rgb(20, 67, 209);
+    background-color: rgba(63, 51, 236, 0.156);
+    padding: 24px;
+}
