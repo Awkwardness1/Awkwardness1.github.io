@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+
+.single-column {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+
+#nav-bar {
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar a {
+    margin-left: 14vw;
+    display: inline-block;
+    text-decoration: none;
+    color: #B78069;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 30px 30px 0px;
+}
+
+#nav-bar a:hover {
+    text-shadow: 1px 1px #844834;
+}
+
+#nav-bar #logo img {
+    margin-right: auto;
+    font-weight: bold;
+    max-width: 20vw;
+    padding: 30px 30px 0px 30px;
+    image-orientation: fixed;
+}
+
+
+#hero {
+    background-image: url("../images/p_hero.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .hero-content {
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#hero img {
+    margin: 0px;
+    width: 90vw;
+    max-width: 800px;
+    color: #B78069;
+    text-shadow: #844834 4px 4px; 
+}
+
+.webpage {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+
+#about-me,
+.side-by-side {
+    display: flex;
+    margin: 48px 0px;
+    align-items: top center;
+}
+
+#about-me #image-container,
+.side-by-side #image-container {
+    flex: 1;
+}
+
+#about-me #text-container,
+.side-by-side #text-container {
+    flex: 1;
+    padding: 36px;
+    color: #844834;
+}
+
+#about-me #image-container img,
+.side-by-side #image-container img {
+    width: 70%;
+    margin-left: 10vw;
+    margin-top: 0px;
+    border: solid 7px #B78069;
+    box-shadow: rgb(36, 1, 125) 10px 10px;
+}
+
+#about-me #text-container h3,
+.side-by-side #text-container h3 {
+    font-size: 5vw;
+    margin: 20px;
+}
+
+#about-me #text-container p,
+.side-by-side #text-container p {
+    color: #844834;
+    margin: 20px;
+    font-size: 2vw;
+}
+
+
+#about-me #text-container a,
+.side-by-side #text-container a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #B78069;
+    color: white;
+    padding: 24px 48px;
+    display: inline-block;
+    border-radius: 48px;
+}
+
+#about-me #text-container a:hover,
+.side-by-side #text-container a:hover {
+    background-color: #B78069;
+    color: white;
+    box-shadow: #844834 5px 5px; 
+
+}
+
+#abilities {
+    margin: 20px; 
+    padding: 48px;
+    text-align: center;
+}
+
+#abilities h3 {
+    font-size: 5vw;
+    margin: 20px;
+    color: #844834;
+}
+
+#abilities p {
+    font-size: 2vw;
+    color: #844834;
+}
+
+#interested {
+    color: #844834;
+    font-size: 4.5vw;
+    margin: 20px; 
+    padding: 40px;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons span a {
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #B78069;
+    color: white;
+    padding: 24px 48px;
+    display: inline-block;
+    border-radius: 48px;
+}
+
+#buttons span a:hover {
+    background-color: #B78069;
+    color: white;
+    box-shadow: #844834 5px 5px; 
+
+}
+
+#footer {
+    margin-top: 15vw;
+    background-image: url("../images/footer.jpg");
+    height: 30vh;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .hero-content {
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#footer h3 {
+    margin: 0px;
+    font-size: 4vw;
+    color: #EEEEEE;
+    text-shadow: #844834 4px 4px; 
+}
+
+/* profile page */
+
+#hero2 {
+    background-image: url("../images/p_hero.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero2 .hero-content {
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#hero2 h1 {
+    margin: 0px;
+    font-size: 8.5vw;
+    color: #EEEEEE;
+    text-shadow: #844834 4px 4px; 
+}
+
+#about-portfolio p {
+    text-align: center;
+    color: #844834;
+    margin: 20px;
+    font-size: 2vw;
+}
+
+.side-by-side #image-container-2 {
+    flex: 1;
+}
+
+.side-by-side #text-container-2 {
+    flex: 1;
+    padding: 36px;
+    color: #844834;
+}
+
+.side-by-side #image-container-2 img {
+    width: 70%;
+    margin-left: 4.5vw;
+    margin-top: 0px;
+    border: solid 7px #B78069;
+    box-shadow: rgb(36, 1, 125) 10px 10px;
+}
+
+.side-by-side #image-container-3 img {
+    width: 50%;
+    margin-left: 10vw;
+    margin-top: 0px;
+    border: solid 7px #B78069;
+    box-shadow: rgb(36, 1, 125) 10px 10px;
+}
+
+.side-by-side #text-container-2 h3 {
+    font-size: 5vw;
+    margin: 20px;
+}
+
+.side-by-side #text-container-2 p {
+    color: #844834;
+    margin: 20px;
+    font-size: 2vw;
+}
+
+
+.side-by-side #text-container-2 a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #B78069;
+    color: white;
+    padding: 24px 48px;
+    display: inline-block;
+    border-radius: 48px;
+}
+
+.side-by-side #text-container-2 a:hover {
+    background-color: #B78069;
+    color: white;
+    box-shadow: #844834 5px 5px; 
+
+}
+
+/* digital gallery */
+
+#layout-70s {
+    max-width: 90vw;
+    margin: 48px auto;
+    text-align: center;
+    border: solid 5px #B78069;
+    box-shadow: #844834 10px 10px;
+    padding: 24px;
+}
+
+.vertical-masonry-gallery {
+    columns: 3 auto;
+    column-gap: 24px;;
+}
+
+.vertical-masonry-gallery img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* about me page */
+
+
+.webpage-2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#about-me-photo img {
+    float: left;
+    width: 30vw;;
+    margin: 3vw;
+    border: solid 7px #B78069;
+    box-shadow: rgb(36, 1, 125) 10px 10px;
+}
+
+#about-me-text {
+    margin: 20px; 
+    padding: 48px;
+}
+
+#about-me-text h3 {
+    font-size: 5vw;
+    margin: 20px;
+    color: #844834;
+}
+
+#about-me-text p {
+    font-size: 2vw;
+    color: #844834;
+}
+
+#button {
+    color: #844834;
+    font-size: 4.5vw;
+    margin: 20px; 
+    padding: 40px;
+    text-align: center;
+}
+
+#buttons-2 span a {
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #B78069;
+    color: white;
+    padding: 24px 48px;
+    display: inline-block;
+    border-radius: 48px;
+}
+
+#buttons-2 span a:hover {
+    background-color: #B78069;
+    color: white;
+    box-shadow: #844834 5px 5px; 
+
+}
