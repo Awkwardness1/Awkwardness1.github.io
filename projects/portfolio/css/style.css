@@ -207,7 +207,7 @@ body {
     text-shadow: #844834 4px 4px; 
 }
 
-/* profile page */
+/* portfolio page */
 
 #hero2 {
     background-image: url("../images/p_hero.jpg");
@@ -260,7 +260,7 @@ body {
 .side-by-side #image-container-3 img {
     width: 50%;
     margin-left: 10vw;
-    margin-top: 0px;
+    margin-top: 5vw;
     border: solid 7px #B78069;
     box-shadow: rgb(36, 1, 125) 10px 10px;
 }
