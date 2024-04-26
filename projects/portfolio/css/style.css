@@ -49,6 +49,7 @@ body {
     height: 60vh;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +97,7 @@ body {
 #about-me #image-container img,
 .side-by-side #image-container img {
     width: 70%;
-    margin-left: 10vw;
+    margin-left: 30%;
     margin-top: 0px;
     border: solid 7px #B78069;
     box-shadow: rgb(36, 1, 125) 10px 10px;
@@ -162,6 +163,8 @@ body {
 }
 
 #buttons {
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -190,6 +193,7 @@ body {
     height: 30vh;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     justify-content: center;
     align-items: center;
 }
@@ -251,14 +255,14 @@ body {
 
 .side-by-side #image-container-2 img {
     width: 70%;
-    margin-left: 4.5vw;
+    margin-left: 15%;
     margin-top: 0px;
     border: solid 7px #B78069;
     box-shadow: rgb(36, 1, 125) 10px 10px;
 }
 
 .side-by-side #image-container-3 img {
-    width: 50%;
+    width: 60%;
     margin-left: 10vw;
     margin-top: 5vw;
     border: solid 7px #B78069;
