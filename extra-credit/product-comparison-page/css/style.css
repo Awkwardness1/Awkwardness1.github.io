@@ -172,3 +172,29 @@ body {
 .side-by-side .tenor-gif-embed {
     width: 100%;
 }
+
+#welcome-page h3 {
+    font-size: 4.5vw;
+    font-family: undertale;
+    color: #EEEEEE;
+    text-align: center;
+}
+
+#welcome-button a {
+    font-size: 4.5vw;
+    font-family: undertale;
+    text-decoration: none;
+    color: #EEEEEE;
+    background-color: darkred;
+    padding: 20px;
+    margin-left: 30vw;
+    margin-right: 1vw;
+}
+
+#welcome-button a:hover {
+    font-weight: bold;
+    font-family: undertale;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: darkred;
+}
