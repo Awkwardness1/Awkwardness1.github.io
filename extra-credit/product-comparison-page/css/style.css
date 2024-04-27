@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+    font-family: undertale;
+    src: url("../fonts/DeterminationMonoWebRegular-Z5oq.ttf");
+  }
+
+#audio {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.side-by-side {
+    display: flex;
+    margin: 48px 0px;
+}
+
+.side-by-side .image-container {
+    flex: 1;
+}
+
+.side-by-side .text-container {
+    flex: 1;
+    padding: 30px;
+}
+
+.side-by-side .image-container img {
+    width: 100%;
+}
+
+.side-by-side .text-container h3 {
+    font-size: 4.5vw;
+    font-family: undertale;
+    color: #EEEEEE;
+}
+
+.side-by-side .text-container h2 {
+    font-size: 2vw;
+    font-family: undertale;
+    color: #EEEEEE;
+}
+
+
+.side-by-side .text-container a {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: undertale;
+    text-decoration: none;
+    background-color: darkred;
+    color: #EEEEEE;
+    padding: 24px 48px;
+    display: inline-block;
+}
+
+.side-by-side .text-container a:hover {
+    font-weight: bold;
+    font-family: undertale;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: darkred;
+}
+
+.single-column {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#card-section {
+    color: #EEEEEE;
+    padding: 48px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    border: 3px solid #EEEEEE;
+    margin: 36px;
+    padding: 36px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 36px;
+    font-family: undertale;
+    margin: 0px;
+}
+
+.card p {
+    font-size: 24px;
+    color: #EEEEEE;
+    margin: 24px 0px 0px;
+}
+
+.comparisons-container {
+    margin: 10%;
+    margin-bottom: 0px;
+}
+
+.comparisons-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #EEEEEE;
+}
+
+.comparisons-layout div {
+    padding: 24px;
+    font-size: 30px;
+    font-family: undertale;
+    border-bottom: 3px solid #EEEEEE;
+}
+
+.comparisons-layout .label {
+    font-weight: bold;
+    font-family: undertale;
+}
+
+.comparisons-layout #x {
+    color: rgb(192, 13, 13);
+}
+
+.comparisons-layout #c {
+    color: rgb(70, 192, 13);
+}
+
+.papyrus h2 {
+    font-size: 36px;
+    color: #EEEEEE;
+    font-family: undertale;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#gif-1 .tenor-gif-embed {
+    max-width: 30%;
+    margin-left: 70%;
+    margin-bottom: 3%;
+}
+
+.tenor-gif-embed {
+    max-width: 80%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.side-by-side .tenor-gif-embed {
+    flex: 1;
+    padding: 30px;
+}
+
+.side-by-side .tenor-gif-embed {
+    width: 100%;
+}
