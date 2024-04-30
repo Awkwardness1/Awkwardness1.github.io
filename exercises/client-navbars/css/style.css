@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #333333;
+}
+
+#navbar {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 25px;
+    padding: 10px 40px;
+}
+
+#navbar a:hover {
+    font-weight: bolder;
+}
+
+#navbar img {
+    width: 340px;
+    padding-top: 10px;
+}
+
+#navbar #logo {
+    margin-right: auto;
+    /* flex: 1; */
+}
+
+#navbar .cta-button {
+    background-color: #333333;
+    color: orange;
+    border-radius: 36px;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    border: solid #333333;
+}
+
+#navbar .cta-button:hover {
+    background-color: orange;
+    border: solid #333333;
+    color: #333333;
+}
+
+#layout {
+    width: 800px;
+    margin: 48px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+}
+
+#navbar-bottom {
+    background: #333333;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 20px orange;
+}
+
+#navbar-bottom a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 36px;
+}
+
+#navbar-bottom a:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+#navbar-top {
+    background: rgb(114, 1, 114);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#navbar-top a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 36px;
+}
+
+#navbar-top a:hover {
+    color: orange;
+}
