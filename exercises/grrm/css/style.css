@@ -496,12 +496,29 @@ body {
         display: none;
     }
 
+    #header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "social";
+    }
+
     #header h1 {
         font-size: 35px;
+        grid-area: header;
+        text-align: center;
+
+    }
+
+    #social-section {
+        grid-area: social;
+        text-align: center;
     }
 
     #nav {
         flex-wrap: wrap;
+        flex: 150px;
     }
 
     #nav a {
