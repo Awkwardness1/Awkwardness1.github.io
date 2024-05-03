@@ -120,11 +120,13 @@ body {
 .card h2 {
     font-size: 40px;
     margin: 20px 0px;
+    color: #212517;
 }
 
 .card h3 {
     font-size: 25px;
     margin: 20px 0px;
+    color: #212517;
 }
 
 .card a {
@@ -176,6 +178,7 @@ body {
     align-items: flex-start;
     margin-left: 20vw;
     margin-right: 20vw;
+    margin-top: 3vw;
 }
 
 
@@ -236,6 +239,15 @@ body {
     width: 20vw;
     border: 5px solid #374709;
     border-radius: 30px;
+}
+
+#info {
+    text-align: left;
+    background-color: #374709;
+    color: #DED3A6;
+    padding: 24px;
+    margin: 30px;
+    font-size: 20px;
 }
 
 #image-container {
