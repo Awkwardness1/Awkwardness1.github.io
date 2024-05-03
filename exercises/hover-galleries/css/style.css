@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    padding: 10px 24px;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 300px;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: rgb(101, 208, 117);
+    color: darkgreen;
+    font-weight: bolder;
+    display: block;
+    padding: 10px;
+    margin-top: 36px;
+}
+
+#card1 a:hover {
+    background-color: lightgreen;
+    box-shadow: 4px 4px 4px rgba(17, 17, 77, 0.571);
+    transform: translateY(-4px);
+    transition: 
+    background-color 0.5s,
+    box-shadow 0.5s,
+    transform 0.5s;
+}
+
+#card1:hover {
+    background-color: rgb(101, 208, 117);
+    box-shadow: 4px 4px 4px rgba(17, 17, 77, 0.571);
+    transform: translateY(-4px);
+}
+
+#card1 {
+    background-color: lightgreen;
+    border: 10px solid rgb(101, 208, 117);
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
+}
+
+#card1 .card-content img {
+    margin: 0px;
+    width: 20vw;
+    border: 10px solid rgb(101, 208, 117);
+    border-radius: 30px;
+}
+
+#card4 {
+    background-color: black;
+    color: white;
+}
+
+#card4 p{
+    font-size: 15px;
+}
+
+#card4 .card-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s,
+        transform 0.5s;
+}
+
+#card4:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+#card5 {
+    position: relative;
+}
+
+#card5 img {
+    width: 25vw;
+}
+
+#card5 .card-content {
+    position: absolute;
+    border: 3px solid goldenrode;
+    background-color: lightyellow;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 4px 4px 4px #00000033;
+    left: 0px;
+    margin: 24px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s,
+        transform 0.5s;
+}
+
+#card5:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+#card5 a {
+    background-color: goldenrod;
+    color: white;
+}
+
+#card5 a:hover {
+    background-color: rgb(179, 135, 24);
+    color: white;
+}
+
+.spacer {
+    margin: 10vw;
+}
