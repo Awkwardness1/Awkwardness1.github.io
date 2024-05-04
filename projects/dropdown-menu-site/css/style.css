@@ -20,6 +20,7 @@ body {
     color: #212517;
     font-size: 25px;
     padding: 10px 40px;
+    display: inline-block;
 }
 
 #navbar a:hover {
@@ -52,7 +53,42 @@ body {
 }
 
 #navbar-top a:hover {
-    background-color:#212517;
+    background-color: #212517;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s;
+    border: solid #212517 4px;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#navbar .dropdown-menu a {
+    background-color: #374709;
+    color: #759242;
+    width: 100%;
+    min-width: 300px;
+}
+
+#navbar .dropdown-menu a:hover {
+    background-color: #759242;
+    color: #DED3A6;
+}
+
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
 }
 
 /* MAIN CONTENT */
@@ -142,6 +178,7 @@ body {
 
 #card1 a:hover {
     background-color: #DED3A6;
+    box-shadow: 4px 4px 4px rgba(34, 35, 11, 0.364);
     color: #759242;
     transform: translateY(-4px);
     transition: 
@@ -170,7 +207,7 @@ body {
     border-radius: 30px;
 }
 
-/* FAY PAGE */
+/* KITTY PAGE */
 
 #card-container2 {
     display: flex;
@@ -182,7 +219,7 @@ body {
 }
 
 
-.card {
+#card2  {
     flex: 300px;
     margin: 24px;
     padding: 24px;
@@ -190,17 +227,19 @@ body {
     text-align: center;
 }
 
-.card h2 {
+#card2 h2 {
     font-size: 40px;
     margin: 20px 0px;
+    color: #DED3A6;
+    text-shadow: 4px 4px #374709;
 }
 
-.card h3 {
+#card2 h3 {
     font-size: 25px;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
-.card a {
+#card2 a {
     text-decoration: none;
     background-color: #374709;
     color: #759242;
@@ -213,6 +252,7 @@ body {
 
 #card2 a:hover {
     background-color: #DED3A6;
+    box-shadow: 4px 4px 4px rgba(34, 35, 11, 0.364);
     color: #759242;
     transform: translateY(-4px);
     transition: 
@@ -235,10 +275,17 @@ body {
 }
 
 #card2 .card-content img {
-    margin: 0px;
-    width: 20vw;
+    width: 100%;
     border: 5px solid #374709;
     border-radius: 30px;
+    transition: 
+        background-color 0.5s,
+        transform 0.5s;
+}
+
+#image-container {
+    width: 30vw;
+    margin: 0px auto;
 }
 
 #info {
@@ -248,12 +295,9 @@ body {
     padding: 24px;
     margin: 30px;
     font-size: 20px;
-}
+} 
 
-#image-container {
-    width: 40vw;
-}
-
+/* SLIDER */
 #slider {
 	overflow: hidden;
 }
@@ -269,7 +313,8 @@ body {
 }
 
 #slider figure {
-	width: 300%;
+    display: flex;
+    margin: 0px;
 	position: relative;
 	animation: 9s slider infinite;
 }
@@ -277,7 +322,87 @@ body {
 #slider figure:hover {
 	animation-play-state: paused;
 }
+
 #slider figure img {
 	width: 40vw;
 	float: left;
+}
+
+
+/* "MEDIA QUERIES" */
+
+@media screen and (max-width: 900px) and (min-width: 481px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    #navbar-top {
+        flex-wrap: wrap;
+    }
+
+    .dropdowm-container:last-child .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #hero h1 {
+        padding-left: 5vw;
+        font-size: 5vw;
+        text-shadow: #374709 3px 3px;
+    }
+
+    #hero-button a {
+        font-size: 4vw;
+        font-weight: bolder;
+        display: inline-block;
+    }
+
+}
+
+/* MOBILE BREAKPOINT */
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #EEEEEE;
+    }
+
+    #navbar-top {
+        flex-wrap: wrap;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #hero {
+        background-image: url("../images/hero.jpg");
+        background-size: cover;
+        background-position: left center;
+    }
+
+    #hero h1 {
+        padding-left: 4vw;
+        font-size: 8vw;
+        text-shadow: #374709 2px 2px;
+    }
+
+    #hero-button a {
+        font-size: 5vw;
+        font-weight: bolder;
+        display: inline-block;
+    }
+    
 }
