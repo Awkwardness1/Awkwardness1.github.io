@@ -364,6 +364,20 @@ body {
         display: inline-block;
     }
 
+    #card-container2 {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 3vw;
+    }
+    
+    #image-container {
+        width: 40vw;
+        margin: 0px auto;
+    }
+
+    #info {
+        margin: 0px;
+    } 
 }
 
 /* MOBILE BREAKPOINT */
@@ -404,5 +418,21 @@ body {
         font-weight: bolder;
         display: inline-block;
     }
+
+    #card-container2 {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 3vw;
+    }
     
+    #image-container {
+        width: 50vw;
+        margin: 0px auto;
+    }
+
+    #info {
+        margin: 0px;
+        font-size: 15px;
+    } 
+
 }
