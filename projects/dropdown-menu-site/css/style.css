@@ -379,6 +379,11 @@ body {
     #info {
         margin: 0px;
     } 
+
+    #card1 .card-content img {
+        width: 40vw;
+    }
+
 }
 
 /* MOBILE BREAKPOINT */
@@ -436,4 +441,7 @@ body {
         font-size: 15px;
     } 
 
+    #card1 .card-content img {
+        width: 40vw;
+    }
 }
