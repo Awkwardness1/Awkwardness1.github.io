@@ -5,7 +5,6 @@
 body {
     margin: 0px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #333333;
 }
 
 #navbar {
@@ -44,6 +43,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     min-width: 150px;
+    margin: 15px;
     text-align: center;
     border: solid #333333;
 }
@@ -154,4 +154,75 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
+}
+
+/* CLIENT 2 */
+
+#navbar2 {
+    background-color: #F7C566;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar2 a {
+    text-decoration: none;
+    color: #6C0345;
+    font-size: 25px;
+    padding: 10px 80px;
+}
+
+#navbar2 a:hover {
+    color: #DC6B19
+}
+
+#navbar2 img {
+    width: 340px;
+    padding-top: 10px;
+}
+
+#navbar2 #logo {
+    margin-right: auto;
+}
+
+#navbar2 .cta-button {
+    background-color: #6C0345;
+    color: #F7C566;
+    border-radius: 36px;
+    padding: 10px 20px;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    border: solid #6C0345;
+}
+
+/* CLIENT 1 */
+
+#navbar3 {
+    background-color: #61764B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar3 a {
+    text-decoration: none;
+    color: #FAD6A5;
+    font-size: 25px;
+    padding: 10px 80px;
+}
+
+#navbar3 a:hover {
+    color: #CFB997;
+}
+
+#navbar3 img {
+    width: 400px;
+    padding-top: 40px;
+}
+
+#navbar3 #logo {
+    margin-right: auto;
 }
