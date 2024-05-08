@@ -406,22 +406,16 @@ body {
     text-decoration: none;
 }
 
-#header #me {
-    color: #800020;
-}
-
-#header #tube {
-    background-color: #ff9999;
-    color: #fcf5dc;
-    padding: 4px;
-    border-radius: 12px;
-
+#header #contents {
+    color: #E07A2F;
+    font-family: header;
 }
 
 #sidebar {
+    font-family: subheader;
+    font-size: 2vw;
     grid-area: sidebar;
     padding: 0px 24px;
-    color:#800020;
     font-weight: bold;
 }
 
@@ -429,18 +423,18 @@ body {
     padding: 12px 0px;
     margin: 0px;
     list-style-type: none;
-    border-bottom: 5px dotted #800020;
+    border-bottom: 2px solid #E07A2F;
 }
-/* pseudo-class */
+
 #sidebar ul a {
     text-decoration: none;
-    color:#111111;
+    color: #026C7B;
     padding: 12px;
     display: block;
 }
 
 #sidebar ul a:hover {
-    background-color:#ff99992c;
+    background-color: #e0792f28;
     border-radius: 12px;
 }
 
@@ -450,71 +444,104 @@ body {
     flex-wrap: wrap;
 }
 
-.metube-item {
-    flex: 250px;
+.menu-item {
+    flex: 400px;
     margin-right: 12px;
     margin-bottom: 12px;
 }
 
-.metube-item h4 {
-    margin: 8px;
+.menu-item h4 a{
+    margin: 0px;
 }
 
-.metube-item h4 a {
+.menu-item h4 a {
     text-decoration: none;
-    color:#800020;
+    font-family: header;
+    font-size: 2vw;
+    text-align: center;
+    color:#E07A2F;
     display: block;
 }
 
-.metube-item h4 a:hover {
+.menu-item h4 a:hover {
     text-decoration: underline;
 }
 
-.video-details {
+.food-details {
     margin: 7px;
 }
 
-.video-channel {
-    margin-bottom: 4px;
+.food-channel {
+    font-family: body;
+    font-size: 5vw;
+    font-weight: bolder;
 }
 
-.metube-item h5 {
-    margin-bottom: 2px;
-    font-size: 15px
+.menu-item h5 {
+    font-size: 2vw;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
-img#adulting {
+img#anrgybird {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
 
-img#balance {
+img#bear {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
 
-img#my-life {
+img#bee {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
 
-img#self-care {
+img#cat {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
 
-img#self-love {
+img#crab {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
 
-img#travel {
+img#dog {
     width: 100%;
-    border: 5px solid #800020;
-    border-radius: 25px;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
+}
+
+img#nest {
+    width: 100%;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
+}
+
+img#pizza {
+    width: 100%;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
+}
+
+img#tiger {
+    width: 100%;
+    box-shadow: -5px 5px #017E90;
+    border: 5px solid #ECA71C;
+    border-radius: 30px;
 }
