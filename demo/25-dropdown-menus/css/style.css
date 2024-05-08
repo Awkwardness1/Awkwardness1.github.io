@@ -22,6 +22,7 @@ body {
     padding: 24px;
     text-decoration: none;
     color: white;
+    display: inline-block;
 }
 
 #navbar #logo {
@@ -62,6 +63,7 @@ body {
     background-color: darkslateblue;
     width: 100%;
     min-width: 200px;
+    display: inline-block;
 }
 
 #navbar .dropdown-menu a:hover {
