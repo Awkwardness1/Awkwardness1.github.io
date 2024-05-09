@@ -245,10 +245,15 @@ body {
     min-width: 150px;
     margin: 15px;
     text-align: center;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
 }
 
 #navbar .cta-button:hover {
     background-color: #CC3B2D;
+    transform: translateY(-4px);
 }
 
 .card a {
@@ -426,6 +431,7 @@ body {
 }
 
 #copyright h4 {
+    font-family: textfield;
     color: white;
     background-color: #EB950D;
     padding: 30px;
@@ -898,6 +904,17 @@ img#tiger {
     #menu-title h1 {
         font-size: 40px;
     }
+
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "about events";
+    }
+
+    #footer #footer-image1 img,
+    #footer #footer-image2 img {
+        display: none;
+    }
 }
     
 /* MOBILE BREAKPOINT */
@@ -979,6 +996,17 @@ img#tiger {
         min-width: 300px;
     }
 
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "about events";
+    }
+
+    #footer #footer-image1 img,
+    #footer #footer-image2 img {
+        display: none;
+    }
+    
     #footer #footer-column1,
     #footer #footer-column2 {
         margin-left: 10px;
