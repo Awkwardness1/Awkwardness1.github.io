@@ -62,7 +62,6 @@ body {
 
 #navbar #logo {
     margin-right: auto;
-    /* flex: 1; */
 }
 
 #navbar .cta-button {
@@ -398,6 +397,49 @@ body {
 
 /* MENU PAGE SECTION */
 
+#hero2 h1 {
+    font-size: 4vw;
+    margin-bottom: 5vh;
+    margin-right: 1vw;
+    color: white;
+    text-shadow: 4px 4px #017E90;
+    text-align: center;
+}
+
+
+#hero2 h4 {
+    font-family: body;
+    font-size: 2.5vw;
+    margin: 0px 1vw 0px 0px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.29);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#hero2 h5 {
+    font-family: subheader;
+    color: white;
+    text-shadow: 4px 4px #017E90;
+    font-size: 5vw;
+    margin: 10px;
+    text-align: center;
+}
+
+#hero2 {
+    background-image: url("../images/hero2.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero2 .hero-content{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
 #grid-layout {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -420,27 +462,25 @@ body {
     font-family: header;
 }
 
-/* ASK PROFRESSOR FOR HALP */
+#sidebar-inner {
+    position: sticky;
+    grid-area: sidebar;
+    top: 100px;
+}
 
 #sidebar-whole {
     left: 10px;
-    overflow-x: hidden;
     padding: 8px 0px;
     width: 40vw;
-    grid-area: sidebar;
 }
 
 #sidebar {
-    position: sticky;
-    top: 100px;
     font-family: subheader;
     font-size: 1.5vw;
     padding: 0px 24px;
     font-weight: bold;
     width: 200px;
 }
-
-/* ASK PROFRESSOR FOR HALP */
 
 #sidebar ul {
     padding: 12px 0px;
@@ -465,6 +505,7 @@ body {
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5vw;
 }
 
 .menu-item {
@@ -585,4 +626,266 @@ img#tiger {
     box-shadow: -5px 5px #017E90;
     border: 5px solid #ECA71C;
     border-radius: 30px;
+}
+
+/* TABLET BREAKPOINT */
+@media screen and (max-width: 800px) and (min-width: 481px) {
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 0px;
+    }
+    
+    #navbar {
+        flex-wrap: wrap;
+        flex: 200px;
+        padding: 10px 20px;
+    }
+
+    #navbar #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-container:hover .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #navbar .cta-button {
+        display: none;
+    }
+
+    #hero a {
+        font-size: 3vw;
+        padding: 10px 40px;
+    }
+
+    .card {
+        max-width: 500px;
+        flex-direction: column;
+    }
+
+    /* MENU PAGE */
+
+    #hero2 {
+        background-image: url("../images/hero2.jpg");
+        height: 60vh;
+    }
+
+    #hero2 h5 {
+        font-size: 6vw;
+    }
+
+    #grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "main";
+    }
+
+    #sidebar-whole {
+        display: none;
+    }
+
+    #main {
+        margin-top: 5vw;
+    }
+
+    .menu-item {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu-item h5 {
+        font-size: 3vw;
+    }
+
+    .menu-item h4 a {
+        font-size: 4vw;
+    }
+
+    .menu-item .lvl-and-time {
+        font-size: 3vw;
+    }
+
+    .menu-item .price p {
+        font-size: 5vw;
+    }
+
+
+}
+
+/* MOBILE BREAKPOINT */
+@media screen and (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #navbar a {
+        border-bottom: solid white 3px;
+        width: 100%;
+    }
+
+    #navbar #logo img{
+        width: 50%;
+    }
+
+    .dropdown-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-container:hover .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #navbar .cta-button {
+        visibility: hidden;
+    }
+
+    #navbar #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero {
+        height: 50vh;
+    }
+    
+    #hero .hero-content h1 {
+        font-size: 8vw;
+    }
+    
+    #hero .hero-content h4 {
+        font-size: 5vw;
+    }
+    
+    #hero a {
+        font-size: 5vw;
+        padding: 10px 40px;
+    }
+
+    .card {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .card img {
+        width: 60vw;
+    }
+
+    .card h2 {
+        font-size: 6vw;
+    }
+
+    .card p {
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    .single-column {
+        min-width: 300px;
+    }
+
+    #footer #footer-column1,
+    #footer #footer-column2 {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    #footer #footer-column1 ul li {
+        font-size: 3.5vw;
+    }
+
+    #footer #footer-column2 ul li {
+        font-size: 3.5vw;
+    }
+
+    .side-by-side .text-container h3 {
+       font-size: 8vw;
+       text-align: center;
+       margin: 0px;
+    }
+
+    
+    .side-by-side .text-container a {
+        font-size: 8vw;
+        text-align: center;
+     }
+
+    .side-by-side p {
+        font-size: 2vw;
+    }
+
+
+     /* MENU PAGE */
+
+     #hero2 {
+        background-image: url("../images/hero2.jpg");
+        height: 50vh;
+    }
+
+    #hero2 h1 {
+        font-size: 7vw;
+    }
+
+    #hero2 h5 {
+        font-size: 8vw;
+    }
+
+    #hero2 .hero-content h4 {
+        display: none;
+    }
+
+    #grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "main";
+    }
+
+    #sidebar-whole {
+        display: none;
+    }
+
+    #main {
+        margin-top: 5vw;
+    }
+
+    .menu-item {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu-item h5 {
+        font-size: 5.5vw;
+    }
+
+    .menu-item h4 a {
+        font-size: 6vw;
+    }
+
+    .menu-item .lvl-and-time {
+        font-size: 4.5vw;
+    }
+
+    .menu-item .price p {
+        font-size: 6vw;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
 }
