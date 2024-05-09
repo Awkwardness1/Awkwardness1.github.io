@@ -817,6 +817,11 @@ img#tiger {
         font-size: 6vw;
     }
     
+    #hero a {
+        font-size: 5vw;
+        padding: 10px 20px;
+    }
+
     #grid-layout {
         grid-template-columns: 1fr;
         grid-template-areas:
