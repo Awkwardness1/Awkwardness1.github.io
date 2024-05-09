@@ -178,10 +178,11 @@ body {
 #centered-column {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 .card {
+    flex-direction: column;
+    display: flex;
     box-shadow: #026C7B -10px 10px;
     background-color: #ECA71C;
     flex: 300px;
@@ -632,7 +633,7 @@ img#tiger {
 }
 
 /* TABLET BREAKPOINT */
-@media screen and (max-width: 800px) and (min-width: 481px) {
+@media screen and (max-width: 1150px) and (min-width: 701px) {
     #logo {
         display: block;
         margin-left: auto;
@@ -667,19 +668,18 @@ img#tiger {
     }
 
     .card {
-        max-width: 500px;
         flex-direction: column;
+        flex: 300px;
     }
 
     /* MENU PAGE */
 
     #hero2 {
-        background-image: url("../images/hero2.jpg");
         height: 60vh;
     }
 
     #hero2 h5 {
-        font-size: 6vw;
+        font-size: 3.3vw;
     }
 
     #grid-layout {
@@ -722,7 +722,100 @@ img#tiger {
 
 }
 
+/* MID BREAK POINT */
+@media screen and (max-width: 700px) and (min-width: 481px) {
+    
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 0px;
+    }
+    
+    #navbar {
+        flex-wrap: wrap;
+        flex: 200px;
+        padding: 10px 20px;
+    }
+
+    #navbar #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar a {
+        border-bottom: solid white 3px;
+        width: 100%;
+    }
+
+    .dropdown-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-container:hover .dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #navbar .cta-button {
+        display: none;
+    }
+
+    #hero2 {
+        height: 60vh;
+    }
+
+    
+    #hero2 h1 {
+        font-size: 6vw;
+    }
+
+    #hero2 h5 {
+        font-size: 6vw;
+    }
+    
+    #grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sidebar"
+            "main";
+    }
+
+    #sidebar-whole {
+        display: none;
+    }
+
+    #main {
+        margin-top: 5vw;
+    }
+
+    .menu-item {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu-item h5 {
+        font-size: 3vw;
+    }
+
+    .menu-item h4 a {
+        font-size: 4vw;
+    }
+
+    .menu-item .lvl-and-time {
+        font-size: 3vw;
+    }
+
+    .menu-item .price p {
+        font-size: 5vw;
+    }
+}
+    
 /* MOBILE BREAKPOINT */
+
 @media screen and (max-width: 480px) {
     #navbar {
         flex-direction: column;
@@ -888,7 +981,5 @@ img#tiger {
         text-align: center;
         font-weight: bold;
     }
-
-
 
 }
