@@ -91,15 +91,18 @@ body {
     top: 70px;
     opacity: 0;
     visibility: hidden;
+    transform: translateY(-8px);
     transition: 
         opacity 0.5s,
-        visibility 0.5s;
+        visibility 0.5s,
+        transform 0.5s;
 }
 
 .dropdown-container:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     min-width: 200px;
+    transform: translateY(0px);
 }
 
 #navbar .dropdown-menu a {
@@ -168,16 +171,25 @@ body {
     font-size: 3vw;
     padding: 10px 200px;
     margin: 5vh 5vw 10vh 5vw;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
 }
 
 #hero a:hover {
     background-color: #CC3B2D;
     border: solid 4px #EB950D;
+    transform: translateY(-4px);
 }
 
 #centered-column {
     display: flex;
     flex-wrap: wrap;
+}
+
+.card:hover {
+    transform: translateY(-4px);
 }
 
 .card {
@@ -190,6 +202,10 @@ body {
     padding: 24px;
     border-radius: 12px;
     text-align: center;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
 
 }
 
@@ -240,17 +256,23 @@ body {
     font-size: 20px;
     font-weight: bold;
     background-color: #017E90;
+    border: solid 4px #017E90;
     color: white;
     display: inline-block;
     width: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 15px;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
 }
 
 .card a:hover {
     background-color: #CC3B2D;
     border: solid 4px #EB950D;
+    transform: translateY(-4px);
 }
 
 .single-column {
@@ -296,16 +318,22 @@ body {
     font-weight: bold;
     text-decoration: none;
     background-color: #017E90;
+    border: solid 4px #017E90;
     color: white;
     text-align: center;
     padding: 10px 90px;
     display: inline-block;
     border-radius: 48px;
+    transition: 
+        background-color 0.5s,
+        box-sshadow 0.5s,
+        transform 0.5s;
 }
 
 .side-by-side .text-container a:hover {
     background-color: #CC3B2D;
     border: solid 4px #EB950D;
+    transform: translateY(-4px);
 }
 
 
@@ -395,6 +423,14 @@ body {
 
 #footer-column2 ul {
     padding: 0px;
+}
+
+#copyright h4 {
+    color: white;
+    background-color: #EB950D;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
 }
 
 /* MENU PAGE SECTION */
@@ -520,13 +556,18 @@ body {
     background-color: #e0792f28;
     border-radius: 20px;
     padding: 29px;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
 }
 
-.menu-item h4 a{
-    margin: 0px;
+.menu-item:hover {
+    transform: translateY(-4px);
 }
 
 .menu-item h4 a {
+    margin: 0px;
     text-decoration: none;
     font-family: header;
     font-size: 2vw;
@@ -633,7 +674,7 @@ img#tiger {
 }
 
 /* TABLET BREAKPOINT */
-@media screen and (max-width: 1150px) and (min-width: 701px) {
+@media screen and (max-width: 1150px) and (min-width: 801px) {
     #logo {
         display: block;
         margin-left: auto;
@@ -723,7 +764,7 @@ img#tiger {
 }
 
 /* MID BREAK POINT */
-@media screen and (max-width: 700px) and (min-width: 481px) {
+@media screen and (max-width: 800px) and (min-width: 481px) {
     
     #logo {
         display: block;
@@ -812,6 +853,25 @@ img#tiger {
     .menu-item .price p {
         font-size: 5vw;
     }
+    
+    .side-by-side .image-container img {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .side-by-side {
+        flex-direction: column;
+    }
+
+    .single-column {
+        min-width: 300px;
+    }
+
+    .text-container h3 {
+        text-align: center;
+    }
+
 }
     
 /* MOBILE BREAKPOINT */
