@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: Header;
+    src: url(../fonts/soccer-league/SoccerLeague.ttf);
+}
+
+  @font-face {
+    font-family: niners;
+    src: url(../fonts/ferro-rosso/FerroRosso.ttf);
+}
+
+@font-face {
+    font-family: bills;
+    src: url(../fonts/teamspirit/TeamSpiritNF.otf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(../fonts/pakenham-free/pakenham\ rg.otf);
+}
+
+/* SECTION 1 AND 2 */
+
+.single-column {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.out-container {
+    background-color: #FFC470;
+    padding: 2px 0px;
+}
+
+.mid-container {
+    background-color: #FFC470;
+}
+
+        /* section 1 */
+
+.section1 h3 {
+    font-family: header;
+    font-weight: 100;
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 20px;
+    margin-top: 70px;
+    color: #8B322C;
+}
+
+.section1 h1 {
+    font-family: header;
+    font-size: 9vw;
+    margin: 20px;
+    text-align: center;
+    color: #4793AF;
+    text-shadow: 8px 8px #8B322C;
+} 
+
+.section1 h2 {
+    font-family: header;
+    font-weight: 100;
+    font-size: 4vw;
+    text-align: center;
+    margin: 20px;
+    color: #8B322C;
+    padding-bottom: 5vw;
+    border-bottom: dotted 8px;
+}
+
+        /* section 2 */
+
+.section2 h1 {
+    font-family: header;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4vw;
+    color: #8B322C;
+}
+
+.section2 h2 {
+    font-family: body;
+    text-align: center;
+    font-size: 4vw;
+    margin: 40px;
+    color: #8B322C;
+}
+
+#questions h2 {
+    margin-bottom: 70px;
+}
+
+.section2 h3{
+    font-family: body;
+    text-align: center;
+    font-size: 3vw;
+    margin: 80px;
+    color: #4793AF;
+    text-shadow: 2px 2px #8B322C;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 #buttons a {
+    font-family: header;
+    font-weight: 100;
+    font-size: 3vw;
+    display: inline-block;
+    background-color: #4793AF;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
+}
+
+.section2 #buttons a:hover {
+    transform: translateY(-4px);
+    box-shadow: 8px 8px #8B322C;
+}
+
+/* SECTION 1 AND 2 END */
+
+/* MIDDLE SECTION */
+
+#grid-layout {
+    display: grid;
+    margin: 0px;
+    align-items: center;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-areas: 
+        "team-1 vs team-2";
+}
+
+#team-1 {
+    grid-area: team-1;
+    text-align: center;
+    margin: 0px;
+}
+
+#vs {
+    grid-area: vs;
+    text-align: center;
+    margin: 10vw 0px;
+    font-family: header;
+    font-size: 10vw;
+    color: #4793AF;
+    text-shadow: 8px 8px #8B322C;
+}
+
+#team-2 {
+    grid-area: team-2;
+    text-align: center;
+    margin: 0px;
+}
+
+#team-1 img,
+#team-2 img {
+    width: 25vw;
+    border: 5px solid #4793AF;
+    box-shadow: 8px 8px #8B322C;
+}
+
+#team-1 h1 {
+    color: #8B322C;
+    text-shadow: 4px 4px #4793AF;
+    font-family: niners;
+    font-size: 4.5vw;
+    margin: 0px;
+    margin-top: 20px;
+} 
+
+#team-2 h1 {
+    color: #4793AF;
+    text-shadow: 4px 4px #8B322C;
+    font-family: bills;
+    font-size: 4.5vw;
+    margin: 0px;
+    margin-top: 20px;
+} 
+
+/* MIDDLE SECTION END */
+
+@media screen and (max-width: 781px) and (min-width: 561px) {
+    .section1 h3 {
+        font-size: 5vw;
+    }
+    
+    .section1 h1 {
+        font-size: 11vw;
+        text-shadow: 6px 6px #8B322C;
+    } 
+    
+    .section1 h2 {
+        font-size: 6vw;
+    }
+
+    #team-1 h1 {
+        text-shadow: 2px 2px #4793AF;
+    } 
+    
+    #team-2 h1 {
+        text-shadow: 2px 2px #8B322C;
+    } 
+
+    .section2 h3{
+        font-family: body;
+        text-align: center;
+        font-size: 3.8vw;
+        margin: 80px;
+        color: #4793AF;
+        text-shadow: 2px 2px #8B322C;
+    }
+    
+    .section2 #buttons a {
+        padding: 20px 18px;
+    }
+}
+
+@media screen and (max-width: 560px) and (min-width: 481px) {
+    .section1 h3 {
+        font-size: 5.5vw;
+    }
+    
+    .section1 h1 {
+        font-size: 11vw;
+        text-shadow: 4px 4px #8B322C;
+    } 
+    
+    .section1 h2 {
+        font-size: 6.5vw;
+    }
+
+    #team-1 h1 {
+        font-size: 8vw;
+        text-shadow: 2px 2px #4793AF;
+    } 
+    
+    #team-2 h1 {
+        font-size: 9vw;
+        text-shadow: 2px 2px #8B322C;
+        margin-bottom: 90px;
+    } 
+
+    #vs {
+        font-size: 6vw;
+        text-shadow: 4px 4px #8B322C;
+        margin: 0px;
+    }
+
+    .section2 h3{
+        font-size: 4.5vw;
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+
+    .section2 h1 {
+        font-size: 6.5vw;
+        margin: 20px;
+    }
+
+    .section2 h2 {
+        font-size: 5vw;
+        margin: 20px;
+    }
+    
+    .section2 #buttons a {
+        padding: 20px 11px;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #grid-layout {
+        display: grid;
+        margin: 0px;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "team-1" 
+            "vs" 
+            "team-2";
+    }
+
+    #team-1 img,
+    #team-2 img {
+        width: 50vw;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+    .section1 h3 {
+        font-size: 5.5vw;
+    }
+    
+    .section1 h1 {
+        font-size: 10vw;
+        text-shadow: 4px 4px #8B322C;
+    } 
+    
+    .section1 h2 {
+        font-size: 6.5vw;
+    }
+
+    #team-1 h1 {
+        font-size: 8vw;
+        text-shadow: 2px 2px #4793AF;
+    } 
+    
+    #team-2 h1 {
+        font-size: 9vw;
+        text-shadow: 2px 2px #8B322C;
+        margin-bottom: 90px;
+    } 
+
+    #vs {
+        font-size: 6vw;
+        text-shadow: 4px 4px #8B322C;
+        margin: 0px;
+    }
+
+    .section2 h3{
+        font-size: 3.8vw;
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+
+    .section2 h1 {
+        font-size: 6.5vw;
+        margin: 20px;
+    }
+
+    .section2 h2 {
+        font-size: 6vw;
+        margin: 20px;
+    }
+    
+    .section2 #buttons a {
+        padding: 20px 10px;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #grid-layout {
+        display: grid;
+        margin: 0px;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "team-1" 
+            "vs" 
+            "team-2";
+    }
+
+    #team-1 img,
+    #team-2 img {
+        width: 50vw;
+    }
+}
