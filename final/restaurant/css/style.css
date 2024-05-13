@@ -40,6 +40,8 @@ body {
 
 #navbar a {
     text-decoration: none;
+    border: solid 4px #33333300;
+    text-align: center;
     color: white;
     font-size: 25px;
     padding: 10px 40px;
@@ -690,7 +692,7 @@ img#tiger {
 }
 
 /* TABLET BREAKPOINT */
-@media screen and (max-width: 1150px) and (min-width: 801px) {
+@media screen and (max-width: 1279px) and (min-width: 801px) {
     #logo {
         display: block;
         margin-left: auto;
