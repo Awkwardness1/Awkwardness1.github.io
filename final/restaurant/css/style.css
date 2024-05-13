@@ -932,6 +932,10 @@ img#tiger {
         width: 100%;
     }
 
+    #navbar a:last-child {
+        border: none;
+    }
+
     #navbar #logo img{
         width: 50%;
     }
