@@ -104,7 +104,7 @@ function updatePlayer() {
         player.classList.remove('face-left');
         break;
       case LEFT:
-        player.src = 'images/rightside.png';
+        player.src = 'images/leftside.png';
         player.classList.add('face-left');
         break;
     }
