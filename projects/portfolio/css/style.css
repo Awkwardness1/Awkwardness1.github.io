@@ -27,7 +27,7 @@ body {
     text-decoration: none;
     color: #B78069;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
     padding: 30px 30px 0px;
 }
 
@@ -38,15 +38,15 @@ body {
 #nav-bar #logo img {
     margin-right: auto;
     font-weight: bold;
-    max-width: 20vw;
-    padding: 30px 30px 0px 30px;
+    max-width: 15vw;
+    padding: 10px 30px 3px 30px;
     image-orientation: fixed;
 }
 
 
 #hero {
     background-image: url("../images/p_hero.jpg");
-    height: 60vh;
+    height: 85vh;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -58,12 +58,13 @@ body {
 #hero .hero-content {
     color: white;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 }
 
 #hero img {
     margin: 0px;
-    width: 90vw;
+    width: 50vw;
     max-width: 800px;
     color: #B78069;
     text-shadow: #844834 4px 4px; 
@@ -90,7 +91,6 @@ body {
 .side-by-side {
     display: flex;
     margin: 48px 0px;
-    align-items: top center;
 }
 
 #about-me #image-container,
@@ -107,7 +107,7 @@ body {
 
 #about-me #image-container img,
 .side-by-side #image-container img {
-    width: 70%;
+    width: 30vw;
     margin-left: 30%;
     margin-top: 0px;
     border: solid 7px #B78069;
@@ -387,4 +387,390 @@ body {
     color: white;
     box-shadow: #844834 5px 5px; 
 
+}
+
+@media screen and (max-width: 1100px) and (min-width: 501px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar #logo img {
+        max-width: 20vw;
+    }
+
+    #nav-bar a {
+        margin-left: 0px;
+        color: #B78069;
+    }
+
+    #nav-bar a:last-child {
+        margin-bottom: 25px;
+        color: #B78069;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #hero2 {
+        height: 60vh;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img"
+            "about";
+    }
+
+    .webpage,
+    .webpage-2 {
+        margin: 20vw;
+    }
+
+    #about-me-text {
+        grid-area: about;
+    }
+
+    #about-me-photo {
+        grid-area: img;
+    }
+
+    #about-me-photo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
+        margin-bottom: 0vw;
+        margin-top: 5vw;
+        float: none;
+        border: solid 3px #B78069;
+        box-shadow: rgb(36, 1, 125) 5px 5px;
+    }
+
+    #buttons {
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #buttons span a {
+        margin: 5vw;
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 48px;
+    }
+
+    .single-column {
+        min-width: 500px;
+        max-width: 1100px;
+        margin: 50px auto;
+    }
+
+    #about-me #text-container a, .side-by-side #text-container a {
+        margin: 5vw;
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 48px;
+    }
+
+
+    #about-me,
+    .side-by-side {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imga"
+            "aboutt"
+            "button";
+    }
+
+    #about-me #image-container {
+        grid-area: imga;
+    }
+
+    #about-me #text-container {
+        grid-area: aboutt;
+    }
+
+    .side-by-side #image-container {
+        grid-area: imga;
+    }
+
+    .side-by-side #text-container {
+        grid-area: aboutt;
+    }
+
+    #about-me #image-container img,
+    .side-by-side #image-container img {
+        grid-area: imga;
+        max-width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-me #text-container h3,
+    .side-by-side #text-container h3 {
+        grid-area: aboutt;
+        text-align: center;
+    }
+
+    #about-me #text-container p,
+    .side-by-side #text-container p {
+        grid-area: aboutt;
+        text-align: center;
+    }
+
+
+    #about-me #text-container a,
+    .side-by-side #text-container a {
+        grid-area: button;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .side-by-side #image-container-3 img {
+        grid-area: imga;
+        max-width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .side-by-side #text-container-2 {
+        grid-area: imga;
+    }
+    
+    .side-by-side #image-container-2 img {
+        grid-area: imga;
+        max-width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .side-by-side #text-container-2 h3 {
+        grid-area: aboutt;
+        text-align: center;
+    }
+    
+    .side-by-side #text-container-2 p {
+        grid-area: aboutt;
+        text-align: center;
+    }
+    
+    
+    .side-by-side #text-container-2 a {
+        grid-area: button;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar #logo img {
+        max-width: 40vw;
+    }
+
+    #nav-bar a {
+        margin-left: 0px;
+        color: #B78069;
+    }
+
+    #nav-bar a:last-child {
+        margin-bottom: 25px;
+        color: #B78069;
+    }
+
+    #hero {
+        height: 40vh;
+    }
+
+    #hero2 {
+        height: 40vh;
+    }
+    
+    #hero2 .hero-content {
+        color: white;
+        text-align: center;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img"
+            "about";
+    }
+
+    .webpage-2 {
+        margin: auto;
+    }
+
+    #about-me-text {
+        grid-area: about;
+    }
+
+    #about-me-photo {
+        grid-area: img;
+    }
+
+    #about-me-photo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
+        margin-bottom: 0vw;
+        margin-top: 5vw;
+        float: none;
+        border: solid 3px #B78069;
+        box-shadow: rgb(36, 1, 125) 5px 5px;
+    }
+
+    #buttons {
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #buttons span a {
+        margin: 5vw;
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 48px;
+    }
+
+    .single-column {
+        min-width: 500px;
+        max-width: 1100px;
+        margin: 50px auto;
+    }
+
+    #about-me #text-container a, .side-by-side #text-container a {
+        margin: 5vw;
+        padding: 20px 20px;
+        display: inline-block;
+        border-radius: 48px;
+    }
+
+
+    #about-me,
+    .side-by-side {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imga"
+            "aboutt"
+            "button";
+    }
+
+    #about-me #image-container {
+        grid-area: imga;
+    }
+
+    #about-me #text-container {
+        grid-area: aboutt;
+    }
+
+    .side-by-side #image-container {
+        grid-area: imga;
+    }
+
+    .side-by-side #text-container {
+        grid-area: aboutt;
+    }
+
+    #about-me #image-container img,
+    .side-by-side #image-container img {
+        grid-area: imga;
+        max-width: 100vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-me #text-container h3,
+    .side-by-side #text-container h3 {
+        grid-area: aboutt;
+        text-align: center;
+    }
+
+    #about-me #text-container p,
+    .side-by-side #text-container p {
+        grid-area: aboutt;
+        text-align: center;
+    }
+
+
+    #about-me #text-container a,
+    .side-by-side #text-container a {
+        grid-area: button;
+        font-size: 4vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .side-by-side #image-container-3 img {
+        grid-area: imga;
+        max-width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .side-by-side #text-container-2 {
+        grid-area: imga;
+    }
+    
+    .side-by-side #image-container-2 img {
+        grid-area: imga;
+        max-width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .side-by-side #text-container-2 h3 {
+        grid-area: aboutt;
+        text-align: center;
+        font-size: 8vw;
+    }
+    
+    .side-by-side #text-container-2 p {
+        grid-area: aboutt;
+        text-align: center;
+        font-size: 3vw;
+    }
+    
+    
+    .side-by-side #text-container-2 a {
+        grid-area: button;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 4vw;
+    }
 }
